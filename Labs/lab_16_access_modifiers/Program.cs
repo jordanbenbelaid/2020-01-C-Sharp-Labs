@@ -8,14 +8,26 @@ namespace lab_16_access_modifiers
         {
             var p = new Parent();
             var c = new Child();
-
+            var dog = new Dog();
+            
             //p._hidden...
 
             p.Exposed = "Yes we can see this";
             c.Exposed = "Yes also visible";
+            p.IsUserLive = true;
+            c.IsUserLive = true;
+
+            dog.Name = "Greatest Dog";
+            p.TakeForWalk(dog);
+            c.TakeForWalk(dog);
         }
     }
 
+    class Dog
+    {
+        public string Name { get; set; }
+      
+    }
     class Parent
     {
         private int _hidden;            //encapsulation
@@ -25,6 +37,11 @@ namespace lab_16_access_modifiers
         internal bool IsUserLive;           //visible in .EXE/DLL but not outside it
 
         protected string FamilyName;            //visible in child
+
+        public void TakeForWalk(Dog d)
+        {
+            Console.WriteLine($"Taking {d.Name} for a walk");
+        }
     }
 
     class Child : Parent
@@ -33,8 +50,8 @@ namespace lab_16_access_modifiers
         //Use constructor but can use any method
 
         public Child()
-            {
-                this.FamilyName = "Robertson";
-            }
-
+        {
+            this.FamilyName = "Robertson";
+        }
+    }
 }
