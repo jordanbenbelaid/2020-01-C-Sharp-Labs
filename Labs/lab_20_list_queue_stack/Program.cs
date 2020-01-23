@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;      //Query language
 
@@ -68,6 +69,34 @@ namespace lab_20_list_queue_stack
             //print stack again
             Console.WriteLine(string.Join(',', stack));
 
+            //Dictionary
+            //Dictionary uses ordered sets (key is UNIQUE and ORDERED, value is the data
+
+            var dict = new Dictionary<int, string>();
+            dict.Add(1, "hi");
+            dict.Add(2, "there");
+            dict.Add(3, "people");
+
+            //error dict.Add(3, "anything");
+
+            foreach (var item in dict) 
+            {
+                Console.WriteLine($"key {item.Key} has value {item.Value}");
+            }
+
+            //List of objects
+            //Sometimes we have to deal with collections of generic objects
+            var arraylist = new ArrayList();
+            arraylist.Add(10);
+            arraylist.Add("hi");
+            arraylist.Add(new object());
+
+            foreach (var item in arraylist)
+            {
+                Console.WriteLine($"Item {item} has type {item.GetType()}");
+            }
+            Console.WriteLine((int)arraylist[0] + 100);
+            Console.WriteLine((string)arraylist[1] + 100);
         }
     }
 }
