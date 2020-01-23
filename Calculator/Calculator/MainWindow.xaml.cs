@@ -42,7 +42,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 1;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number1.ToString();
             }
 
         }
@@ -58,7 +58,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 2;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -74,7 +74,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 3;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -90,7 +90,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 4;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -106,7 +106,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 5;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -122,7 +122,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 6;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -138,7 +138,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 7;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -154,7 +154,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10) + 8;
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -169,8 +169,8 @@ namespace Calculator
             }
             else
             {
-                number2 = (number2 * 10) + 9;
-                textDisplay.Text = number1.ToString();
+                number2 += (number2 * 10) + 9;
+                textDisplay.Text = number2.ToString();
             }
 
         }
@@ -186,7 +186,7 @@ namespace Calculator
             else
             {
                 number2 = (number2 * 10);
-                textDisplay.Text = number1.ToString();
+                textDisplay.Text += number2.ToString();
             }
 
         }
@@ -194,25 +194,25 @@ namespace Calculator
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             operation = "+";
-            textDisplay.Text = "";
+            textDisplay.Text += "+";
         }
 
         private void ButtonSubtract_Click(object sender, RoutedEventArgs e)
         {
             operation = "-";
-            textDisplay.Text = "";
+            textDisplay.Text += "-";
         }
 
         private void ButtonMultiply_Click(object sender, RoutedEventArgs e)
         {
             operation = "*";
-            textDisplay.Text = "";
+            textDisplay.Text += "*";
         }
 
         private void ButtonDivide_Click(object sender, RoutedEventArgs e)
         {
             operation = "/";
-            textDisplay.Text = "";
+            textDisplay.Text += "/";
         }
 
         private void ButtonEquals_Click(object sender, RoutedEventArgs e)
