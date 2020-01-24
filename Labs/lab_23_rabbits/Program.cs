@@ -12,7 +12,7 @@ namespace lab_23_rabbits
 
             //lab 1 
             //create 100 rabbits
-            
+
             
             var rabbit = new List<Rabbit>();
             //give them all ID, name and age
@@ -21,26 +21,32 @@ namespace lab_23_rabbits
                 var newRabbit = new Rabbit();
                 rabbit.Add(newRabbit);
             }
-            
+
             foreach (var item in rabbit)
             {
                 Console.WriteLine($"This rabbit is called {item.RabbitName} and is {item.Age} years old, with ID : {item.RabbitId}");
             }
 
-
             //print a sample (every 10 items)
 
             //lab 2
             //create a loop to 'age' the rabbits
-            
-            rabbit.ForEach(item => Console.WriteLine(item.Age++)); 
-
-            void RabbitAge()
+            for (int i = 0; i < 50; i++)
             {
+                RabbitAge(rabbit);
+            }
 
+            void RabbitAge(List<Rabbit>r)
+            {
+                r.ForEach(item => item.Age++);
             }
 
             //print a sample
+            foreach (var item in rabbit)
+            {
+                Console.WriteLine($"This rabbit is called {item.RabbitName} and is {item.Age} years old, with ID : {item.RabbitId}");
+            }
+
 
         }
     }
