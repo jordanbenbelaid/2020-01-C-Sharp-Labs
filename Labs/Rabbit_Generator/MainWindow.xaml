@@ -39,7 +39,7 @@
         
         <!-- Each rabbit breeds a rabbit -->
         <Button x:Name="ButtonBreedRabbits" Grid.Row="1" Grid.Column="2" 
-                Content="Breed rabbits"/>
+                Content="Breed rabbits" Click="ButtonBreedRabbits_Click"/>
         <ListBox x:Name="BreedRabbits" Grid.Column="2" Grid.Row="3" Background="DarkSlateBlue"/>
     </Grid>
 </Window>

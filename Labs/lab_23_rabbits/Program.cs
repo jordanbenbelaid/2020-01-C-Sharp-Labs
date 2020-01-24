@@ -47,6 +47,7 @@ namespace lab_23_rabbits
                 Console.WriteLine($"This rabbit is called {item.RabbitName} and is {item.Age} years old, with ID : {item.RabbitId}");
             }
 
+            //breed rabbits so that each year, a rabbit breeds another rabbit
 
         }
     }

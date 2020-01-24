@@ -32,7 +32,7 @@ namespace Rabbit_Generator
             for (int i = 0; i < 100; i++)
             {
                 var rabbit = new Rabbit();
-                rabbit.Name = "Rabbit" + i;
+                rabbit.Name = "Rabbit" + " " + i;
                 RabbitList.Add(rabbit);
             }
 
@@ -58,7 +58,7 @@ namespace Rabbit_Generator
 
             foreach (var rabbit in RabbitList)
             {
-                ListBoxAgeRabbits.Items.Add(rabbit.Name + " " + rabbit.Age);
+                ListBoxAgeRabbits.Items.Add($"{rabbit.Name} is {rabbit.Age} years old");
             }
         }
         
