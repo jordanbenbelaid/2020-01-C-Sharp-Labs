@@ -41,5 +41,11 @@
         <Button x:Name="ButtonBreedRabbits" Grid.Row="1" Grid.Column="2" 
                 Content="Breed rabbits" Click="ButtonBreedRabbits_Click"/>
         <ListBox x:Name="BreedRabbits" Grid.Column="2" Grid.Row="3" Background="DarkSlateBlue"/>
+    
+        <!-- Rabbits can only breed once they are 3 years old -->
+        <Button x:Name="ButtonRabbitsBreedAtThree" Grid.Row="1" Grid.Column="3"
+                Content="Rabbits breed when they are 3 years old" Click="ButtonRabbitsBreedAtThree_Click"/>
+        <ListBox x:Name="RabbitsBreedAtThree" Grid.Column="3" Grid.Row="3" Background="DarkSlateBlue"/>
+
     </Grid>
 </Window>
