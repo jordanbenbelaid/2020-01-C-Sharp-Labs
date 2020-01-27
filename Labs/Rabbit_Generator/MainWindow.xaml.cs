@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Rabbit_Generator
 {
@@ -25,15 +13,21 @@ namespace Rabbit_Generator
         static List<Rabbit> RabbitList2 = new List<Rabbit>();
         static List<Rabbit> RabbitList3 = new List<Rabbit>();
         static List<Rabbit> RabbitList4 = new List<Rabbit>();
-        static Rabbit firstRabbit = new Rabbit();
+
         public MainWindow()
         {
             InitializeComponent();
 
+            Rabbit firstRabbit = new Rabbit();
+            Rabbit firstRabbit1 = new Rabbit();
+
             firstRabbit.Age = 0;
             firstRabbit.Name = "Rabbit" + 1;
             RabbitList3.Add(firstRabbit);
-            RabbitList4.Add(firstRabbit);
+
+            firstRabbit1.Age = 0;
+            firstRabbit1.Name = "Rabbit" + 1;
+            RabbitList4.Add(firstRabbit1);
 
         }
 
@@ -52,7 +46,7 @@ namespace Rabbit_Generator
             }
         }
 
-       
+
 
         private void ButtonAge100Rabbits_Click(object sender, RoutedEventArgs e)
         {
@@ -72,7 +66,7 @@ namespace Rabbit_Generator
                 }
 
             }
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1; i++)
             {
                 foreach (var item in RabbitList2)
                 {
@@ -85,7 +79,7 @@ namespace Rabbit_Generator
                 ListBoxAgeRabbits.Items.Add($"{rabbit.Name} is {rabbit.Age} years old");
             }
         }
-        
+
 
         private void ButtonBreedRabbits_Click(object sender, RoutedEventArgs e)
         {
