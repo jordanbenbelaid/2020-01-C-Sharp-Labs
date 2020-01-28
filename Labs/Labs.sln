@@ -57,11 +57,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_25_test_database", "lab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_25b_rabbit_database", "lab_25b_rabbit_database\lab_25b_rabbit_database.csproj", "{3D01A46E-C313-48DD-ACEE-0EAD2C6FAE15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_26_NUnit_tests", "lab_26_NUnit_tests\lab_26_NUnit_tests.csproj", "{FA3E48FD-5142-407E-96DC-4E47E6130986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26_NUnit_tests", "lab_26_NUnit_tests\lab_26_NUnit_tests.csproj", "{FA3E48FD-5142-407E-96DC-4E47E6130986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_27_test_addition", "lab_27_test_addition\lab_27_test_addition.csproj", "{B31C2939-5312-4593-B293-B9360861535D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_27_test_addition", "lab_27_test_addition\lab_27_test_addition.csproj", "{B31C2939-5312-4593-B293-B9360861535D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_28_code_to_pass_tests", "lab_28_code_to_pass_tests\lab_28_code_to_pass_tests.csproj", "{AA7E72F3-F9DE-4DD8-B880-F71E92FF1BF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_28_code_to_pass_tests", "lab_28_code_to_pass_tests\lab_28_code_to_pass_tests.csproj", "{AA7E72F3-F9DE-4DD8-B880-F71E92FF1BF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_29_variables_continued", "lab_29_variables_continued\lab_29_variables_continued.csproj", "{27B44B5D-B7EB-4A93-BEF2-DD1A39AA7786}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_30_stopwatch_date_time", "lab_30_stopwatch_date_time\lab_30_stopwatch_date_time.csproj", "{745FE796-E67D-4542-B021-9200410D5116}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_31_Enum", "lab_31_Enum\lab_31_Enum.csproj", "{57BF56B7-01F1-42E5-9987-0EB5E3980F45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_32_variables_final", "lab_32_variables_final\lab_32_variables_final.csproj", "{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_34_tuples", "lab_34_tuples\lab_34_tuples.csproj", "{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +199,26 @@ Global
 		{AA7E72F3-F9DE-4DD8-B880-F71E92FF1BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7E72F3-F9DE-4DD8-B880-F71E92FF1BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7E72F3-F9DE-4DD8-B880-F71E92FF1BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B44B5D-B7EB-4A93-BEF2-DD1A39AA7786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B44B5D-B7EB-4A93-BEF2-DD1A39AA7786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B44B5D-B7EB-4A93-BEF2-DD1A39AA7786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B44B5D-B7EB-4A93-BEF2-DD1A39AA7786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745FE796-E67D-4542-B021-9200410D5116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745FE796-E67D-4542-B021-9200410D5116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745FE796-E67D-4542-B021-9200410D5116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745FE796-E67D-4542-B021-9200410D5116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57BF56B7-01F1-42E5-9987-0EB5E3980F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BF56B7-01F1-42E5-9987-0EB5E3980F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BF56B7-01F1-42E5-9987-0EB5E3980F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BF56B7-01F1-42E5-9987-0EB5E3980F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

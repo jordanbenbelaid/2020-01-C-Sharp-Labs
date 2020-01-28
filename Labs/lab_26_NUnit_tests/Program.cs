@@ -53,7 +53,8 @@ namespace lab_26_NUnit_tests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCase(3,3,3,27)]
+        [TestCase(3, 3, 3, 27)]
+        [TestCase(4, 4, 4, 96)]
         public void Sum3DArrayTest(int x, int y, int z, int expected)
         {
             var instance = new Basic_Tests();
@@ -62,5 +63,19 @@ namespace lab_26_NUnit_tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestCase(1, 1, 1, 0)] 
+        [TestCase(3, 3, 3, 27)]
+        [TestCase(4, 4, 4, 216)]
+
+        public void Sum3DArrayTestWarmUp(int x, int y, int z, int expected)
+        {
+            var instance = new Basic_Tests();
+
+            var actual = instance.Warm_Up_3D_Array(x, y, z);
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }

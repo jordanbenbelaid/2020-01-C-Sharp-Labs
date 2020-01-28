@@ -80,6 +80,30 @@ namespace lab_28_code_to_pass_tests
             return sum;
         }
 
+
+        public int Warm_Up_3D_Array(int x, int y, int z)
+        {
+            var array = new int[x, y, z];
+            int sum = 0;
+            
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    for (int k = 0; i < z; i++)
+                    {
+                        array[i, j, k] = i * j * k;
+                    }
+                }
+            }
+
+            foreach (var item in array)
+            {
+                sum += item;
+            }
+            return sum;
+        }
+
         /*
         Build an array which takes as an input parameter the size of the array.
         The array items are the square of the index
