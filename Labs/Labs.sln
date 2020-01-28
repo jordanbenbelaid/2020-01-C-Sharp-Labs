@@ -71,7 +71,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_31_Enum", "lab_31_Enum\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_32_variables_final", "lab_32_variables_final\lab_32_variables_final.csproj", "{036CAA8D-321D-46BE-BB29-AFF95BFC14D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_34_tuples", "lab_34_tuples\lab_34_tuples.csproj", "{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_34_tuples", "lab_34_tuples\lab_34_tuples.csproj", "{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_33_Rabbit_Advanced_Database2", "lab_33_Rabbit_Advanced_Database2\lab_33_Rabbit_Advanced_Database2.csproj", "{6AB0E204-92A2-49E2-98CE-143074D7EFCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +221,10 @@ Global
 		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D2178D-5BB9-4DD1-AECF-E120BFB3D8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
