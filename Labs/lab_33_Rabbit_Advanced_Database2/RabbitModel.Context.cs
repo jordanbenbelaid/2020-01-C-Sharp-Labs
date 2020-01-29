@@ -25,6 +25,6 @@ namespace lab_33_Rabbit_Advanced_Database2
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<RabbitTable> RabbitTables { get; set; }
+        public virtual DbSet<RabbitTable> RabbitTable { get; set; }
     }
 }

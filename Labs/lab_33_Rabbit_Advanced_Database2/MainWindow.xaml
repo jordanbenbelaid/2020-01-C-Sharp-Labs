@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_33_Rabbit_Advanced_Database2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="auto" Width="auto">
+    <Grid Background="DarkGreen">
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -18,7 +20,52 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="ListViewRabbits" Grid.Column="0" Grid.Row="3" SelectionChanged="ListViewRabbits_SelectionChanged"/>
+        <!--Title-->
+        <Label x:Name="LabelHeading" Content="Rabbit Database" 
+               Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="35" FontWeight="DemiBold" Foreground="AntiqueWhite"/>
+        <!--Show rabbits generated-->
+        <Button x:Name="ButtonShowRabbits" Content="Show Rabbits"
+                Foreground="AntiqueWhite" Background="DarkGray"
+                Grid.Column="1" Grid.Row="1" Click="ButtonShowRabbits_Click"/>
+        <ListView x:Name="ListViewRabbits" Grid.Column="0" Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="3"
+                  Background="DarkGreen" Foreground="AntiqueWhite"
+                  SelectionChanged="ListViewRabbits_SelectionChanged"
+                  MouseRightButtonUp="ListViewRabbits_MouseRightButtonUp">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn x:Name="Column_1" Header="Name" DisplayMemberBinding="{Binding RabbitName}" Width="50"/>
+                    <GridViewColumn x:Name="Column_2" Header="ID" DisplayMemberBinding="{Binding RabbitTableId}" Width="50"/>
+                    <GridViewColumn x:Name="Column_3" Header="Age" DisplayMemberBinding="{Binding RabbitAge}" Width="50"/>
+                    <GridViewColumn x:Name="Column_4" Header="Type" DisplayMemberBinding="{Binding RabbitType}" Width="60"/>
+                    <GridViewColumn x:Name="Column_5" Header="Date of Birth" DisplayMemberBinding="{Binding DOB}" Width="90"/>
+                    <GridViewColumn x:Name="Column_6" Header="Is Active" DisplayMemberBinding="{Binding isActive}" Width="60"/>
+                </GridView>
+            </ListView.View>
+            </ListView>
+        <Label x:Name="LabelRabbitId" Content="ID" Grid.Column="0" Grid.Row="5" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               FontSize="27"/>
+        <TextBox x:Name="TextBoxRabbitId" Grid.Row="7" Grid.Column="0"/>
+        
+        <Label x:Name="LabelRabbitName" Content="Name" Grid.Column="1" Grid.Row="5" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               FontSize="27"/>
+        <TextBox x:Name="TextBoxRabbitName" Grid.Row="7" Grid.Column="1"/>
+        
+        <Label x:Name="LabelRabbitAge" Content="Age" Grid.Column="2" Grid.Row="5" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               FontSize="27"/>
+        <TextBox x:Name="TextBoxRabbitAge" Grid.Row="7" Grid.Column="2"/>
+
+
     </Grid>
 </Window>

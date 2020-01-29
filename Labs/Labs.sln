@@ -75,6 +75,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_34_tuples", "lab_34_tup
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_33_Rabbit_Advanced_Database2", "lab_33_Rabbit_Advanced_Database2\lab_33_Rabbit_Advanced_Database2.csproj", "{6AB0E204-92A2-49E2-98CE-143074D7EFCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_35_overloading", "lab_35_overloading\lab_35_overloading.csproj", "{CE33ECB1-D14E-4AEA-BEF3-FF7EC1E16035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB0E204-92A2-49E2-98CE-143074D7EFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE33ECB1-D14E-4AEA-BEF3-FF7EC1E16035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE33ECB1-D14E-4AEA-BEF3-FF7EC1E16035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE33ECB1-D14E-4AEA-BEF3-FF7EC1E16035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE33ECB1-D14E-4AEA-BEF3-FF7EC1E16035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

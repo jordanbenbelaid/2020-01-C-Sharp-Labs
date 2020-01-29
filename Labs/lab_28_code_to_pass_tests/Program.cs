@@ -80,7 +80,7 @@ namespace lab_28_code_to_pass_tests
             return sum;
         }
 
-
+        //warm up 
         public int Warm_Up_3D_Array(int x, int y, int z)
         {
             var array = new int[x, y, z];
@@ -90,7 +90,7 @@ namespace lab_28_code_to_pass_tests
             {
                 for (int j = 0; j < y; j++)
                 {
-                    for (int k = 0; i < z; i++)
+                    for (int k = 0; k < z; k++)
                     {
                         array[i, j, k] = i * j * k;
                     }
@@ -116,7 +116,19 @@ namespace lab_28_code_to_pass_tests
 
         public int Test_125_Build_Array_And_Return_Sum_Of_Squares(int arraySize)
         {
-            return -1;
+            var array = new int[arraySize];
+            int sum = 0;
+
+            for (int i = 0; i < arraySize; i++)
+            {
+                array[i] = i * i;
+            }
+
+            foreach (var item in array)
+            {
+                sum += item;
+            }
+            return sum;
         }
 
 
@@ -131,7 +143,38 @@ namespace lab_28_code_to_pass_tests
 
         public int Test_126_Loops(int[] array)
         {
-            return -1;
+            int x = 0;
+            int sum = 0;
+
+            while (x < array.Length)
+            {
+                array[x] += 1;
+                x++;
+            }
+            
+            x = 0;
+
+            do
+            {
+                array[x] += 3;
+                x++;
+            } 
+            while (x < array.Length);
+
+            x = 0; 
+
+            foreach (var item in array)
+            {
+                array[x] = item * 2;
+                x++;
+            }
+
+            foreach (var item in array)
+            {
+                sum += item;
+            }
+
+            return sum;
         }
 
 

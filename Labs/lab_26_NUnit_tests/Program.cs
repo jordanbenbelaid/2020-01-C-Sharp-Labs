@@ -77,5 +77,26 @@ namespace lab_26_NUnit_tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestCase(2, 1)]
+        [TestCase(3, 5)]
+        [TestCase(4, 14)]
+        public void SumOfSquares(int array, int expected)
+        {
+            var instance = new Basic_Tests();
+
+            var actual = instance.Test_125_Build_Array_And_Return_Sum_Of_Squares(array);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(new int [] { 1, 2, 3, 4},52)]
+        public void LoopsWithArrays(int[] array, int expected)
+        {
+            var instance = new Basic_Tests();
+
+            var actual = instance.Test_126_Loops(array);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
