@@ -89,7 +89,7 @@ namespace lab_26_NUnit_tests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCase(new int [] { 1, 2, 3, 4},52)]
+        [TestCase(new int [] { 1, 2, 3, 4 }, 52)]
         public void LoopsWithArrays(int[] array, int expected)
         {
             var instance = new Basic_Tests();

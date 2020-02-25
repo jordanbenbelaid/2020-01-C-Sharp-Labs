@@ -27,5 +27,35 @@ namespace lab_26_NUnit_tests
         //Tests go here
 
 
+        //Morning test to check product length
+        [Test]
+        public void NorthwindLengthTest()
+        {
+            var instance = new DatabaseTests();
+
+            var actual = instance.ProductTest();
+
+            Assert.AreEqual(actual, 77);
+        }
+
+        [Test]
+        public void NorthwindAddingTest()
+        {
+            var instance = new DatabaseTests();
+
+            var actual = instance.Tests2();
+
+            Assert.AreEqual(actual, 92);
+        }
+
+        [Test]
+        public void NorthwindRemovingTest()
+        {
+            var instance = new DatabaseTests();
+
+            var actual = instance.Tests3();
+
+            Assert.AreEqual(actual, 91);
+        }
     }
 }

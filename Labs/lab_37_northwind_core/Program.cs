@@ -206,11 +206,9 @@ namespace lab_37_northwind_core
 
      public class DatabaseTests
     {
+        static List<Customer> customerList = new List<Customer>();
         public int Tests()
         {
-            int sum = 0;
-            List<Customer> customerList = new List<Customer>();
-
             using (var db = new NorthwindDbContext())
             {
                 customerList = db.Customers.ToList();
@@ -219,15 +217,52 @@ namespace lab_37_northwind_core
                 return customerList.Count;
         }
 
-        //public int Tests2()
-        //{
-            
-        //}
+        public int Tests2()
+        { 
 
-        //public int Tests3()
-        //{
-            
-        //}
+            using (var db = new NorthwindDbContext())
+            {
+                customerList = db.Customers.ToList();
+            }
+
+            var customer = new Customer()
+            {
+                CustomerID = "Phil2",
+                CompanyName = "Sparta"
+            };
+
+            using (var db = new NorthwindDbContext())
+            {
+                db.Customers.Add(customer);
+                db.SaveChanges();
+                customerList = db.Customers.ToList();
+            }
+            return customerList.Count;
+        }
+
+        public int Tests3()
+        {
+            using (var db = new NorthwindDbContext())
+            {
+                var deleteItem = db.Customers.Find("Phil2");
+                db.Customers.Remove(deleteItem);
+                db.SaveChanges();
+                customerList = db.Customers.ToList();
+            }
+            return customerList.Count;
+        }
+
+        public int ProductTest()
+        {
+            List<Product> productList = new List<Product>();
+
+            using (var db = new NorthwindDbContext())
+            {
+                productList = db.Products.ToList();
+            }
+
+            return productList.Count;
+        }
     }
 }
     //talks to the database
