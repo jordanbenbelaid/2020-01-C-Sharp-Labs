@@ -15,7 +15,7 @@ namespace lab_60_cats_API.Models
         public int? CategoryID { get; set; }
         public Category Category { get; set; }
         
-        [Display(Name = "Dat Of Birth")]
+        [Display(Name = "Date Of Birth")]
         [DataType(DataType.Date)]
         public DateTime DateOfBirth { get; set; }
 

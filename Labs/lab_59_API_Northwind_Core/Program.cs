@@ -147,6 +147,7 @@ namespace lab_59_API_Northwind_Core
                 //add customer
 
                 customer = JsonConvert.DeserializeObject<Customer>(customerString);
+
                 customer.CustomerID = ID;
                 customer.ContactName = name;
                 customer.CompanyName = CompanyName;
@@ -160,6 +161,23 @@ namespace lab_59_API_Northwind_Core
 
                 var response = await client.PutAsync(url + $"/{customer.CustomerID}", HttpContent);
                 return response;
+            }
+        }
+
+        static async void DeleteCustomerAsync(string ID)
+        {
+            var responseMessage = await DeleteCustomerDataAsync(ID);
+            Console.WriteLine($"Customer {ID} deleted with response message {responseMessage.IsSuccessStatusCode}");
+
+        }
+
+        static async Task<HttpResponseMessage> DeleteCustomerDataAsync(string ID)
+        {
+            using (var client = new HttpClient())
+            {
+                var deleteResponse = await client.DeleteAsync(url + @$"/{ID}");
+
+                return deleteResponse;
             }
         }
     }
