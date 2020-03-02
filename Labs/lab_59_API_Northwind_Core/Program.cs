@@ -14,7 +14,7 @@ namespace lab_59_API_Northwind_Core
 
         static List<Customer> customers = new List<Customer>();
         static Customer customer = new Customer();
-        static string url = "https://localhost:44335/api/Customers";
+        static string url = "https://localhost:44392/api/Customers";
         static Stopwatch s = new Stopwatch();
         static long SynchronousTime = 0;
         static HttpClient httpclient = new HttpClient();
@@ -145,7 +145,14 @@ namespace lab_59_API_Northwind_Core
             {
                 var customerString = await GetCustomerDataAsync(url.ToString() + $"/{ID}");
                 //add customer
+
                 customer = JsonConvert.DeserializeObject<Customer>(customerString);
+                customer.CustomerID = ID;
+                customer.ContactName = name;
+                customer.CompanyName = CompanyName;
+                customer.City = City;
+                customer.Country = Country;
+
                 string customerJson = JsonConvert.SerializeObject(customer);
                 var HttpContent = new StringContent(customerJson);
                 HttpContent.Headers.ContentType.MediaType = "application/json";
