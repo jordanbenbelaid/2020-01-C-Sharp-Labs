@@ -121,13 +121,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_55_Raw_SQL", "lab_55_Ra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_56_JSON_Deserialize", "lab_56_JSON_Deserialize\lab_56_JSON_Deserialize.csproj", "{8F9B41F1-CC14-41B2-8BAE-6C8C1C32A83A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_57_streaming_serialization", "lab_57_streaming_serialization\lab_57_streaming_serialization.csproj", "{7BF042DB-DC3B-49D5-AF6A-68EB51E6B477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_57_streaming_serialization", "lab_57_streaming_serialization\lab_57_streaming_serialization.csproj", "{7BF042DB-DC3B-49D5-AF6A-68EB51E6B477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_58_serialization", "lab_58_serialization\lab_58_serialization.csproj", "{6DC0B408-6EA4-4363-8141-2482356C3743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_58_serialization", "lab_58_serialization\lab_58_serialization.csproj", "{6DC0B408-6EA4-4363-8141-2482356C3743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_59_API_Northwind_Core", "lab_59_API_Northwind_Core\lab_59_API_Northwind_Core.csproj", "{6B718C04-1082-46B3-B31F-DE97E9DD3B00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_59_API_Northwind_Core", "lab_59_API_Northwind_Core\lab_59_API_Northwind_Core.csproj", "{6B718C04-1082-46B3-B31F-DE97E9DD3B00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_60_cats_API", "lab_60_cats_API\lab_60_cats_API.csproj", "{B96358FB-8C25-4DE1-BCD8-29FDFD582B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_60_cats_API", "lab_60_cats_API\lab_60_cats_API.csproj", "{B96358FB-8C25-4DE1-BCD8-29FDFD582B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_61_MVC_Wesbite_Cats", "lab_61_MVC_Wesbite_Cats\lab_61_MVC_Wesbite_Cats.csproj", "{3CEFAB91-C39B-449E-A2F7-07B5078C193B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -387,6 +389,10 @@ Global
 		{B96358FB-8C25-4DE1-BCD8-29FDFD582B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B96358FB-8C25-4DE1-BCD8-29FDFD582B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B96358FB-8C25-4DE1-BCD8-29FDFD582B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CEFAB91-C39B-449E-A2F7-07B5078C193B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEFAB91-C39B-449E-A2F7-07B5078C193B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CEFAB91-C39B-449E-A2F7-07B5078C193B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEFAB91-C39B-449E-A2F7-07B5078C193B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
