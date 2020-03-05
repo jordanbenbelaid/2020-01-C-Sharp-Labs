@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Final_Nba_API.Models.HistoricPlayer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Historic Players</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HistoricPlayerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HistoricPlayerPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HistoricPlayerDOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayerRetired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NbaTeam)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HistoricPlayerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HistoricPlayerPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HistoricPlayerDOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerRetired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbaTeam.NbaTeamName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.HistoricPlayerID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.HistoricPlayerID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.HistoricPlayerID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

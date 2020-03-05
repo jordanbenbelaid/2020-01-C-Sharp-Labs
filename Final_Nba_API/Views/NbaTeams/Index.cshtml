@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Final_Nba_API.Models.NbaTeam>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>NBA Teams</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NbaTeamName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NbaTeamConference)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampionshipAppearances)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampionshipWins)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbaTeamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbaTeamConference)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampionshipAppearances)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampionshipWins)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NbaTeamID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NbaTeamID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NbaTeamID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

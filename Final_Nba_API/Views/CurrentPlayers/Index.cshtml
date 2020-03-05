@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Final_Nba_API.Models.CurrentPlayer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Current Players</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentPlayerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentPlayerPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentPlayerDOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NbaTeam)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentPlayerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentPlayerPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentPlayerDOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbaTeam.NbaTeamName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CurrentPlayerID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CurrentPlayerID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CurrentPlayerID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

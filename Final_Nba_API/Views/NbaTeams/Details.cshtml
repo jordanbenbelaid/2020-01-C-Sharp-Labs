@@ -1,0 +1,30 @@
+﻿@model Final_Nba_API.Models.NbaTeam
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>NbaTeam</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NbaTeamName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NbaTeamName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NbaTeamConference)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NbaTeamConference)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.NbaTeamID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
