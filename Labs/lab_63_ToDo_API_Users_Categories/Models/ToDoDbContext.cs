@@ -8,6 +8,7 @@ namespace lab_63_ToDo_API_Users_Categories.Models
 {
     public class ToDoDbContext : DbContext
     {
+        public ToDoDbContext() { }
         public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
             : base(options) { }
         public DbSet<User> Users { get; set; }
