@@ -32,6 +32,21 @@
         .para-standard{
             margin: 0 8vw;
         }
+        form{
+            margin: 7vh 7vw;
+        }
+        .form-question{
+            display:inline-block;
+            width:20vw;
+        }
+        button{
+            margin:4vh 0;
+            margin-left:21vw;
+        }
+        .error-message{
+            color:red;
+            display:none;
+        }
     </style>
 
 </head>
@@ -40,18 +55,32 @@
     <ul class="navbar-main">
         <a href="index2.html"><li class="navbar-item">Home</li></a>
         <a href="about.html"><li class="navbar-item">About</li></a>
+        <a href="bootstrap.html"><li class="navbar-item">Bootstrap</li></a>
         <a href="contact.html"><li class="navbar-item">Contact</li></a>
     </ul>
-    <h1 id="header-main"> My First Web Page </h1>
-    <p class="para-standard">Here is a paragraph of dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        <span class="bold">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span>
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h1 id="header-main"> Contact </h1>
+    <form onsubmit="return checkInputDetails()">
+        <span class="form-question">Please enter your name </span>
+        <input id="contact-name" type="text" required placeholder="Please enter FULL name"/>
+        <br/>
+        <span class="form-question">Please enter your age </span>
+        <input id="contact-age" type="number" min="0" required />
+        <p id="age-error-message" class="error-message">Age must be older than 5!</p>
+        <br/>
+        <button type="submit" value="submit">Submit</button>
+    </form>
     </div>
 
     <script>
-        
+        function checkInputDetails(){
+            let contactName = document.getElementById('contact-name').value
+            let contactAge = document.getElementById('contact-age').value
+            if (contactAge < 5){
+                document.getElementById('age-error-message').style.display= "block"
+                return false
+            } 
+            alert(`Thank you for your submission, your name is ${contactName} and you are ${contactAge} years old `);
+        }
     </script>
 </body>
 
